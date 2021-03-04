@@ -6,6 +6,7 @@ import './App.css';
 //import Hello from './components/Hello'
 //import Welcome from './components/Welcome'
 import Message from './components/Message'
+import Counter from './components/Counter'
 
 class App extends Component{
   render(){
@@ -27,7 +28,8 @@ class App extends Component{
         <button>Action3</button>
       </Welcome>
       {/*<Hello />*/}
-      <Message></Message>
+      <Message/>
+      <Counter/>
     </div>
     );
   }
