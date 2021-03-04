@@ -6,7 +6,7 @@ const Hello=() =>{
             <h1>Hello Pooja</h1>
         </div>
     )*/
-    return React.createElement('div',{id:'hello',className:'class1'},React.createElement('h1',null,'Hello Pooja')); //using props to reuse the component
+    return React.createElement('div',{id:'hello',className:'class1'},React.createElement('h1',null,"Hello Pooja")); //using props to reuse the component
 }
 
 export default Hello
