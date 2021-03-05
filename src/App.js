@@ -4,15 +4,15 @@ import './App.css';
 import Greet from './components/Greet'
 //import {Greet} from './components/Greet' for named export
 //import Hello from './components/Hello'
-//import Welcome from './components/Welcome'
-import Message from './components/Message'
-import Counter from './components/Counter'
+import Welcome from './components/Welcome'
+//import Message from './components/Message'
+//import Counter from './components/Counter'
 
 class App extends Component{
   render(){
     return(
     <div className="App">
-      <Greet name="Steve" heroName="Captain America">
+      <Greet name="Steve" heroName="Captain America">                      {/*stateless functional components*/}
         <p>This is a children class</p>
       </Greet>
       <Greet name="Tony" heroName="Iron Man">
@@ -21,15 +21,15 @@ class App extends Component{
       <Greet name="Bruce" heroName="Hulk">
         <button>Action1</button>
       </Greet>
-      {/*<Welcome name="Steve" heroName="Captain America">
+      <Welcome name="Steve" heroName="Captain America">                     {/*stateful class component*/}
         <button>Action2</button>
       </Welcome>
-      <Welcome name="Tony" heroName="Iron Man">
+      {/*<Welcome name="Tony" heroName="Iron Man">
         <button>Action3</button>
-      </Welcome>
+      </Welcome>*/}
       {/*<Hello />*/}
-      <Message/>
-      <Counter/>
+      {/*<Message/>
+      <Counter/>*/}
     </div>
     );
   }

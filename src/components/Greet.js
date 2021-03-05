@@ -12,8 +12,17 @@ export default Greet /*                                                         
      return <h1>Hello {props.name} a.k.a {props.heroName}</h1>
  }*/
 
-const Greet=({name,heroName})=>{
-    return <h1>Hello {name} a.k.a {heroName}</h1>                               //destructuring using parameters
+/*const Greet=({name,heroName})=>{
+    return <h1>Hello {name} a.k.a {heroName}</h1>                               //destructuring in the parameters
+}*/
+const Greet=props=>{
+    const{ name,heroName }= props                                                                            //destructuring in the function body
+    return(
+        <div>
+            <h1>Hello {name} a.k.a {heroName}</h1>
+        </div>
+
+    )
 }
 
  export default Greet
