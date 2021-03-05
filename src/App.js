@@ -9,13 +9,14 @@ import './App.css';
 //import Counter from './components/Counter'
 //import FunctionClick from './components/FunctionClick'
 //import ClassClick from './components/ClassClick'
-import EventBind from './components/EventBind'
+//import EventBind from './components/EventBind'
+import ParentComponent from "./components/ParentComponent";
 
 class App extends Component{
   render(){
     return(
     <div className="App">
-      {/*<Greet name="Steve" heroName="Captain America">                      {/*stateless functional components
+      {/*<Greet name="Steve" heroName="Captain America">
         <p>This is a children class</p>
       </Greet>
       <Greet name="Tony" heroName="Iron Man">
@@ -24,7 +25,7 @@ class App extends Component{
       <Greet name="Bruce" heroName="Hulk">
         <button>Action1</button>
       </Greet>
-      <Welcome name="Steve" heroName="Captain America">                     {/*stateful class component
+      <Welcome name="Steve" heroName="Captain America">
         <button>Action2</button>
       </Welcome>
       <Welcome name="Tony" heroName="Iron Man">
@@ -34,8 +35,9 @@ class App extends Component{
       <Message/>
       <Counter/>
       <FunctionClick/>
-      <ClassClick/>*/}
-      <EventBind/>
+      <ClassClick/>
+      <EventBind/>*/}
+      <ParentComponent/>
     </div>
     );
   }
